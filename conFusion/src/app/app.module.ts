@@ -9,6 +9,10 @@ import { MatButtonModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatGridListModule } from '@angular/material';
 import { MatListModule } from '@angular/material';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +20,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
-
 import 'hammerjs';
 
 import { DishService } from './services/dish.service';
@@ -49,7 +52,11 @@ import { LoginComponent } from './login/login.component';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [
     DishService,
