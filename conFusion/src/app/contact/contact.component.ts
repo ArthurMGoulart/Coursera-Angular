@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
 
   createForm() {
     this.feedbackForm = this.fb.group({
-      firstname: ['', Validators.required],
+      firstname: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25)]],
       lastname: ['', Validators.required],
       telnum: [0, Validators.required],
       email: ['', Validators.required],
